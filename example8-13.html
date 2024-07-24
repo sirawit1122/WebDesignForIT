@@ -1,0 +1,72 @@
+
+12:04
+Tontrakan
+Tontrakan Khundiloke
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        width: 400px;
+        border-collapse: collapse;
+        font: 14px tahoma;
+    }
+    caption{
+        caption-side: top;
+    }
+    #c1{
+       width: 40%;
+    }
+    #c2{
+       width: 25%;
+    }
+    #c3{
+       width: 15%;
+    }
+    #c4{
+       width: 20%;
+    }
+    td, th{
+        border: dorred 1px grey;
+        padding: 5px;
+    }
+    thead{
+        background-color: steelblue;
+        color: white;
+    }
+    tr.even{
+        background-color: gainsboro;
+    }
+    td:nth-child(n+2){
+       text-align: right;
+    }
+    tfoot{
+        background-color: lightcoral;
+        color: blue;
+    }
+</style>
+<body>
+    <table border="1">
+        <caption>รายการสินค้าในรถเข็น</caption>
+        <thead>
+            <tr>
+                <th id="c1">ชื่อสินค้า</th>
+                <th id="c2">ราคา</th>
+                <th id="c3">จำนวน</th>
+                <th id="c4">รวม</th>
+            </tr>
+        </thead>
+    </tbody>
+    <tr><td> เสื้อ</td><td>500</td><td>2</td><td>1,000</td></tr>
+    <tr><td>กางเกง</td><td>1,000</td><td>3</td><td>3,000</td></tr>
+    <tr><td>รองเท้า</td><td>2,000</td><td>1</td><td>2,000</td></tr>
+    <tr><td>เข็มขัด</td><td>500</td><td>1</td><td>500</td></tr>
+</tbody>
+<tfoot>
+    <tr><td colspan="3">รวมทั้งสิ้น</td><td>7,000</td></tr>
+</tfoot>
+</table>
